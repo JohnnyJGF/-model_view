@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>杨家堂</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 谷歌实现的一个 web component，可用于查看 Web 上的 3D 模型并与之交互 -->
+    <script
+      type="module"
+      src="./model-viewer.min.js"
+    ></script>
+    <model-viewer
+      style="width: 100%; height: 100vh"
+      src="./gltf/杨家堂/YJT.gltf"
+      camera-controls
+      touch-action="pan-y"
+    ></model-viewer>
+  </body>
+</html>
